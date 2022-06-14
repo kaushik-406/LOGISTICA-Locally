@@ -9,9 +9,11 @@
   </head>
   <body>
     <div>
-      <img loading="lazy"
-      class="Banner" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-    />
+      <picture>
+        <source media="(min-width:768px)" srcset="./images/Banner1.jpg">
+        <source media="(min-width:480px)" srcset="./images/Banner2.jpg">
+        <img src="./images/Banner3.jpg" alt="Owl" class="Banner" loading="lazy">
+      </picture>
     </div>
     <div class="text border-top">
       <h2 class="margin-0">
@@ -24,28 +26,6 @@
         green and blue cones detect a range of the natural colors in light and
         work together to produce all the colors you see in the world.
       </h2>
-    </div>
-    <div>
-      <article class="thumb">
-        <img loading="lazy"
-          src="https://media.istockphoto.com/photos/table-top-view-of-spicy-food-picture-id1316145932?b=1&k=20&m=1316145932&s=170667a&w=0&h=feyrNSTglzksHoEDSsnrG47UoY_XX4PtayUPpSMunQI="
-        />
-      </article>
-      <article class="thumb">
-        <img loading="lazy"
-         src="https://media.istockphoto.com/photos/shot-of-a-young-woman-shopping-for-groceries-in-a-supermarket-picture-id1343544200?b=1&k=20&m=1343544200&s=170667a&w=0&h=DlCdxlQOtwQmZ9UaAnNj8RhOXtYihP2ASlb-Er_zs3E="
-        />
-      </article>
-      <article class="thumb">
-        <img loading="lazy"
-         src="https://media.istockphoto.com/photos/weve-got-you-covered-during-lockdown-picture-id1287632111?b=1&k=20&m=1287632111&s=170667a&w=0&h=PvIcxOiA4Ofhy3FN6S4gcJXlU-EfsmkDnBKt3HmZNw8="
-        />
-      </article>
-      <article class="thumb">
-        <img loading="lazy"
-         src="https://media.istockphoto.com/photos/food-for-healthy-brain-picture-id1299079243?b=1&k=20&m=1299079243&s=170667a&w=0&h=vav4VYNuuV0Qc4fl2JhROewXaKGEYnhlXddiB4PCKm8="
-        />
-      </article>
     </div>
   </body>
 </html>
