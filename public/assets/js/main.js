@@ -4,7 +4,7 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
-
+// google tag manager start
 window.dataLayer = window.dataLayer || [];
 function gtag() {
   dataLayer.push(arguments);
@@ -12,7 +12,7 @@ function gtag() {
 gtag("js", new Date());
 
 gtag("config", "G-9B4YMVNH5Q");
-
+// google tag manager end
 
 
 (function () {
