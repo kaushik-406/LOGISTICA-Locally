@@ -1,8 +1,8 @@
 (function($) {
     $(document).ready(function() {
         // Lazzy LOad initiate
-        const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-        observer.observe();
+        // const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+        // observer.observe();
         //End Lazzy load initiate
 
         if ($(window).width() < 768) {
