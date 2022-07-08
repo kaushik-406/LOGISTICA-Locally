@@ -1,0 +1,15 @@
+.banner-cta-container {
+  max-width: 1090px;
+  margin: auto;
+  margin-top: 52px;
+  margin-bottom: 52px;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  .banner-cta-container {
+    margin-top: 36px;
+    margin-bottom: 0px;
+    padding: 0px 16px;
+  }
+}

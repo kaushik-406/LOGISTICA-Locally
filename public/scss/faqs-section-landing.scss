@@ -1,0 +1,30 @@
+@use './faqs-section.scss';
+@import './colors.scss';
+
+
+.faqs-section-style{
+    padding-top: 62px;
+
+    @include mobile{
+        padding-top: 0px;
+        padding-bottom: 26px;
+    }
+
+    .faqs-section__div{
+        .ques-para{
+            .paragraph{
+                @include mobile{
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .faq-show-more{
+        @include mobile{
+            display: none;
+        }
+    }
+}

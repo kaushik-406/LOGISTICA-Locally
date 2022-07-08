@@ -1,0 +1,15 @@
+@use './bannersec.scss';
+@import './colors.scss';
+
+.bannersec-style{
+    margin-top: 72px;
+
+    @include mobile{
+        padding-top: 0px;
+        margin-top: 5px;
+    }
+
+    .headbanner{
+        padding-top: 42px;
+    }
+}

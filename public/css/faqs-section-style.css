@@ -1,0 +1,18 @@
+.faqs-section-style {
+  padding-top: 62px;
+}
+
+@media (max-width: 767px) {
+  .faqs-section-style {
+    padding-top: 0px;
+    padding-bottom: 26px;
+  }
+
+  .faqs-section-style .faqs-section__div .ques-para .paragraph:last-child {
+    display: none;
+  }
+
+  .faqs-section-style .faq-show-more {
+    display: none;
+  }
+}

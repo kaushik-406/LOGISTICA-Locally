@@ -1,0 +1,18 @@
+.whytatacards-style {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .whytatacards-style {
+    background-color: transparent;
+    margin-bottom: 0px;
+  }
+
+  .whytatacards-style .whytatacards__items {
+    padding-bottom: 20px;
+  }
+
+  .whytatacards-style .whytata__card-style {
+    background-color: transparent;
+  }
+}

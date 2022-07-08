@@ -1,0 +1,21 @@
+@import './colors.scss';
+
+.edit-div-style{
+        max-width: 338px;
+        width: 338px;
+
+        @include mobile{
+            width: 100%;
+            max-width: 100%;
+        }
+    .edit-input-style{
+        width: calc(100% - 58px);
+        margin: 30px 0px;
+    
+        @include mobile{
+            width: calc(100% - 16px);
+            margin: 12px 0px;
+        }
+    }
+}
+

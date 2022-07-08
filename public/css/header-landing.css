@@ -1,0 +1,122 @@
+/* Header START */
+
+header {
+  box-shadow: 0px 2px 14px rgba(88, 89, 91, 0.1);
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+header .container {
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+header .header-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+header .header-sec .header-logo {
+  height: 32px;
+  width: auto;
+}
+
+header .header-sec .header-right {
+  position: relative;
+}
+
+header .header-sec .header-right .input-div .edit-div .search-icon {
+  top: 30%;
+  right: 10px;
+}
+
+header .header-sec .header-right .face-agent {
+  display: flex;
+  flex-direction: column;
+  color: #D62049;
+  font-size: 8px;
+  margin-left: 16px;
+}
+
+header .header-sec .header-right .face-agent a {
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+header .header-sec .header-right .face-agent a img {
+  height: 24px;
+  width: auto;
+}
+
+header .header-sec .header-right .face-agent .contact-us {
+  display: none;
+}
+
+/* Header END */
+
+@media (max-width: 767px) {
+  header {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  header .header-sec {
+    padding: 13px 18px 14px 16px;
+  }
+
+  header .header-sec .header-logo {
+    height: 24px;
+    width: auto;
+  }
+
+  header .header-sec .header-right {
+    max-width: 240px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  header .header-sec .header-right .input-div {
+    max-width: 167px;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  header .header-sec .header-right .input-div .edit-div {
+    max-width: 167px;
+    width: 100%;
+  }
+
+  header .header-sec .header-right .input-div .edit-div .input-field {
+    max-width: 149px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 132.5%;
+    width: 100%;
+  }
+
+  header .header-sec .header-right .face-agent {
+    margin-left: 9px;
+    align-items: center;
+  }
+
+  header .header-sec .header-right .face-agent a img {
+    max-width: 26px;
+    height: 22px;
+    width: auto;
+  }
+
+  header .header-sec .header-right .face-agent .contact-us {
+    display: block;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 132.5%;
+    color: #D62049;
+  }
+}

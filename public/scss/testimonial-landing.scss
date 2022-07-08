@@ -1,0 +1,22 @@
+@use './testimonial.scss';
+@import './colors.scss';
+
+
+.testimonial-style{
+    padding-top: 36px;
+
+    @include mobile{
+        padding-top: 0px;
+        margin-bottom: 36px;
+    }
+
+    .testimonial__heading {
+        .testimonial-head {
+            padding-top: 0px;
+
+            @include mobile{
+                padding-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@use './youtube';
+@import './colors.scss';
+
+section.yt-style{
+    padding-bottom: 41px;
+
+    @include mobile{
+        padding-bottom: 8px;
+    }
+    
+}
+
+#ytDialog::backdrop {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(3px);
+  }

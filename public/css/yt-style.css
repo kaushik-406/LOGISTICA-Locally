@@ -1,0 +1,308 @@
+/* Youtube START */
+
+.youtube {
+  padding: 0px 16px;
+}
+
+.youtube .youtube-section__item {
+  margin: auto;
+  display: flex;
+  position: relative;
+  max-width: 1090px;
+  width: 100%;
+  background-color: #F2F7FB;
+  border-bottom: 9px solid #0073BB;
+  padding: 37px 26px 25px 26px;
+  gap: 29px;
+}
+
+.youtube .youtube-section__item .videoTxt {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.youtube .youtube-section__item .videoTxt h4 {
+  line-height: 42px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #333333;
+  margin: 0;
+  display: block;
+}
+
+.youtube .youtube-section__item .videoTxt .yt-para1 {
+  padding-top: 19px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  margin: 0;
+}
+
+.youtube .youtube-section__item .videoTxt .yt-para2 {
+  padding-top: 16px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #58595B;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.youtube .youtube-section__item .videoTxt .yt-para3 {
+  padding-top: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A7A9AC;
+  margin: 0;
+}
+
+.youtube .youtube-section__item .videoTxt .download-btn {
+  padding-top: 12px;
+}
+
+.youtube .youtube-section__item .videoTxt .download-btn a {
+  text-decoration: none;
+  margin: 0;
+}
+
+.youtube .youtube-section__item .videoTxt .download-btn a .downloadbtn img {
+  padding-left: 13px;
+}
+
+.youtube .youtube-section__item .videoTxt .download-btn a .img-in-btn {
+  height: 21px;
+  width: 21px;
+}
+
+.youtube .youtube-section__item .video {
+  max-height: 277.87px;
+  width: 52%;
+  max-height: 278px;
+  min-height: 278px;
+  position: relative;
+}
+
+.youtube .youtube-section__item .video-thumb-div {
+  position: relative;
+}
+
+.youtube .youtube-section__item .video-thumb-div .overlay-black .overlay-txt {
+  display: none;
+}
+
+.youtube .youtube-section__item .video-thumb-div .video-overlay-btn {
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  top: 50%;
+  border-radius: 8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.youtube .youtube-section__item .video-thumb-div .video-overlay-btn img {
+  width: 80px;
+  height: auto;
+}
+
+.youtube .youtube-section__item .video-thumb-div .video-thumbnail {
+  height: auto;
+  max-width: 532px;
+  width: 100%;
+}
+
+.youtube .youtube-section__item .video #yt-anchor {
+  display: block;
+  margin: 0px;
+  z-index: 1;
+}
+
+.youtube .youtube-section__item .video-card-title {
+  display: none;
+}
+
+#ytDialog {
+  padding: 0px;
+  border: 0px solid white;
+  padding-top: 20px;
+  background: transparent;
+}
+
+#ytDialog .custom-yt-close {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Youtube END */
+
+section.yt-style {
+  padding-bottom: 41px;
+}
+
+#ytDialog::-webkit-backdrop {
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+#ytDialog::backdrop {
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+@media (max-width: 767px) {
+  .youtube {
+    padding: 23px 16px 10px 16px;
+  }
+
+  .youtube .youtube-section__item {
+    flex-direction: column-reverse;
+    padding: 0px;
+    background-color: transparent;
+    border-bottom: none;
+    gap: 11px;
+  }
+
+  .youtube .youtube-section__item .videoTxt {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .youtube .youtube-section__item .videoTxt h4 {
+    display: none;
+  }
+
+  .youtube .youtube-section__item .videoTxt .yt-para1 {
+    padding-right: 0px;
+    line-height: 18.5px;
+    padding-top: 0px;
+  }
+
+  .youtube .youtube-section__item .videoTxt .yt-para2 {
+    padding-right: 0px;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 11px;
+    padding-top: 11px;
+  }
+
+  .youtube .youtube-section__item .videoTxt .yt-para3 {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 11px;
+    color: #58595B;
+    padding-top: 6px;
+  }
+
+  .youtube .youtube-section__item .videoTxt .download-btn {
+    width: 100%;
+  }
+
+  .youtube .youtube-section__item .videoTxt .download-btn .downloadbtn {
+    width: auto;
+    justify-content: center;
+  }
+
+  .youtube .youtube-section__item .video {
+    width: 100%;
+    max-height: none;
+    min-height: unset;
+  }
+
+  .youtube .youtube-section__item .video-thumb-div .overlay-black {
+    border-radius: 6px;
+  }
+
+  .youtube .youtube-section__item .video-thumb-div .overlay-black .overlay-txt {
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: 9px;
+  }
+
+  .youtube .youtube-section__item .video-thumb-div .overlay-black {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 5.72%, rgba(0, 0, 0, 0) 77.5%);
+  }
+
+  .youtube .youtube-section__item .video-thumb-div .video-overlay-btn {
+    top: auto;
+    left: auto;
+    min-width: auto;
+    min-height: auto;
+    bottom: 13px;
+    right: 11px;
+    transform: none;
+  }
+
+  .youtube .youtube-section__item .video-thumb-div .video-overlay-btn img {
+    width: 52px;
+  }
+
+  .youtube .youtube-section__item .video-thumb-div .video-thumbnail {
+    height: auto;
+    width: 100%;
+    max-width: unset;
+  }
+
+  .youtube .youtube-section__item .video-card-title {
+    position: absolute;
+    display: block;
+    position: a;
+    font-family: "HelveticaBold";
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 5.72%, rgba(0, 0, 0, 0) 77.5%);
+    border-radius: 6px;
+    font-size: 18px;
+    width: 96%;
+    height: 100%;
+    /* margin-left: 9px; */
+    line-height: 120%;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    bottom: -12px;
+    padding: 0px;
+  }
+
+  .youtube .youtube-section__item .video-card-title span {
+    position: absolute;
+    bottom: 14px;
+    font-weight: 700;
+    font-size: 18px;
+    /* top: 120px; */
+    padding-left: 9px;
+  }
+
+  #ytDialog iframe {
+    width: 100%;
+    min-height: 190px;
+    max-height: 190px;
+  }
+
+  #ytDialog {
+    width: 100%;
+  }
+
+  section.yt-style {
+    padding-bottom: 8px;
+  }
+}

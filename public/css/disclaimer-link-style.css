@@ -1,0 +1,18 @@
+.disclaimer-link-style.container {
+  max-width: 1090px;
+  margin: auto;
+  padding-top: 57px;
+  padding-bottom: 37px;
+  margin-bottom: 86px;
+}
+
+@media (max-width: 767px) {
+  .disclaimer-link-style.container {
+    padding-left: 16px;
+    padding-top: 37px;
+    margin-bottom: 92px;
+    padding-bottom: 0px;
+    height: auto;
+    display: block;
+  }
+}

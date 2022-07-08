@@ -1,0 +1,135 @@
+@import './colors.scss';
+
+/* Red anchor links START */
+
+
+.disclamer__link{
+    display: flex;
+    justify-content: center;
+
+    @include mobile{
+        justify-content: center;
+        padding: 0px 17px;
+
+    }
+
+    .link__list{
+        display: flex;
+
+        @include mobile{
+            width: 100%;
+        }
+
+        & ul:last-child{
+
+            li {
+                    &:last-child::after {
+                        content: none;
+                    }
+                }
+        
+        }
+        
+    }
+
+    &__details{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+
+        a{
+            margin: 0px;
+            text-decoration: none;
+        }
+
+        @include mobile{
+            display: block;
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+
+            &::after{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            margin: 0px 18px;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-image: url('../img/vrline.svg');
+            z-index: -1;
+            right: -62px;
+
+            }
+
+            &:last-child::after {
+                content: none;
+
+                @include mobile{
+                    content: none;
+                }
+            }
+        }
+
+    
+            li{
+                margin: 0px 18px 0px 36px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 132.5%;
+                color: $primary-red;
+
+                @include mobile{
+                    font-size: 10px;
+                    margin-right: 42px;
+                    margin-bottom: 16px;
+                    margin-left: 0px;
+                }
+
+                &:nth-child(odd){
+                    &::after{
+                        @include mobile{
+                            content: none;
+                        }
+                    }
+                }
+
+                &:nth-child(2){
+                    &::after{
+                        @include mobile{
+                            content: "";
+                            height: 100%;
+                            top: -10px;
+                            background-position: center;
+                        }
+                    }
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    height: 22px;
+                    width: 2px;
+                    background-repeat: no-repeat;
+                    margin: 0px 18px;
+                    background-size: contain;
+                    background-image: url('../img/vrline.svg');
+
+                    @include mobile{
+                        content: none;
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $primary-red;
+                }
+
+            }
+        
+    }
+}
+/* Red anchor links END */
+
+

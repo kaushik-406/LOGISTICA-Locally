@@ -1,0 +1,168 @@
+@import './colors.scss';
+
+/* WHy TATA cards START */
+
+.whytatacards {
+    background-color: $underline-2;
+
+    .container {
+        max-width: 1090px;
+        margin: 0 auto;
+
+        @include mobile{
+            padding: 0px 16px;
+        }
+    }
+
+    &__items {
+        padding: 24px 0;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .whytatacards__txt {
+            width: 40%;
+            padding-right: 22px;
+
+            @include mobile {
+                width: 100%;
+                margin-bottom: 16px;
+                padding-right: 0px;
+            }
+
+            h4 {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 42px;
+                color: $black;
+
+                @include mobile {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 132.5%;
+                }
+            }
+
+            p {
+                padding-top: 13px;
+                color: $black;
+                font-weight: 300;
+                line-height: 22px;
+                font-size: 18px;
+
+                @include mobile {
+                    padding-top: 10px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 132.5%;
+                }
+            }
+
+        }
+
+        .show-more {
+
+            display: none;
+
+            @include mobile {
+                display: block;
+                text-align: center;
+                width: fit-content;
+                margin: auto;
+                margin-top: 17px;
+
+                a {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 120%;
+                    text-decoration: none;
+                    text-align: center;
+                    color: $primary-blue;
+                }
+
+
+
+            }
+        }
+    }
+
+    .whytata__card {
+        width: 60%;
+        align-items: inherit;
+        gap: 25px;
+        row-gap: 30px;
+        justify-content: flex-start;
+        background-color: $underline-2;
+
+
+        @include mobile {
+            width: 100%;
+            gap: 16px;
+
+        }
+
+        &__item {
+            padding: 20px 20px 12px 22px;
+            width: 30%;
+            background: $white;
+            mix-blend-mode: normal;
+            box-shadow: 0px 0px 15.6321px rgba(0, 115, 187, 0.1);
+            border-radius: 15px;
+            min-height: 148px;
+
+            @include mobile {
+                width: 47%;
+                border-radius: 12px;
+                padding: 19px 19px 12px 19px;
+
+                &:where(:nth-last-child(-n+2)) {
+                    display: none;
+                }
+            }
+
+
+            h3 {
+                font-size: 24px;
+                color: $secondary-blue;
+                margin: 0px;
+                line-height: 29px;
+                font-weight: 700;
+
+                @include mobile {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            img {
+                padding-bottom: 10px;
+
+                @include mobile {
+                    padding-bottom: 8px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                padding-top: 7px;
+                line-height: 19px;
+                color: $gray-1;
+                font-weight: 300;
+
+                @include mobile {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+
+        }
+
+
+
+    }
+
+
+}
+
+/* WHy TATA cards END */
