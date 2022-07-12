@@ -1,0 +1,168 @@
+footer {
+  max-width: 100%;
+  max-height: 82px;
+  background-color: #FFFFFF;
+  bottom: 0;
+  filter: drop-shadow(2px 0px 14px rgba(0, 0, 0, 0.1));
+  position: fixed;
+  width: 100%;
+  padding: 20px 0px;
+  z-index: 2;
+}
+
+footer .container {
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+footer .footer-div .footer-anchor {
+  margin: 0px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 0px;
+  }
+
+  footer .footer-div {
+    width: 100%;
+    justify-content: center;
+    margin-right: 16px;
+  }
+
+  footer .footer-div .footer-anchor {
+    width: 100%;
+    margin: 15px 16px 15px 16px;
+    justify-content: center;
+  }
+}
+
+/* Red anchor links START */
+
+.disclamer__link {
+  display: flex;
+  justify-content: center;
+}
+
+.disclamer__link .link__list {
+  display: flex;
+}
+
+.disclamer__link .link__list ul:last-child li:last-child::after {
+  content: none;
+}
+
+.disclamer__link__details {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.disclamer__link__details a {
+  margin: 0px;
+  text-decoration: none;
+}
+
+.disclamer__link__details li {
+  margin: 0px 18px 0px 36px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 132.5%;
+  color: #D62049;
+}
+
+.disclamer__link__details li::after {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 2px;
+  background-repeat: no-repeat;
+  margin: 0px 18px;
+  background-size: contain;
+  background-image: url("./vrline.svg");
+}
+
+.disclamer__link__details li a {
+  text-decoration: none;
+  color: #D62049;
+}
+
+/* Red anchor links END */
+
+.disclaimer-link-style.container {
+  max-width: 1090px;
+  margin: auto;
+  padding-top: 57px;
+  padding-bottom: 37px;
+  margin-bottom: 86px;
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .disclamer__link__details:last-child::after {
+    content: none;
+  }
+
+  .disclamer__link {
+    justify-content: center;
+    padding: 0px 17px;
+  }
+
+  .disclamer__link .link__list {
+    width: 100%;
+  }
+
+  .disclamer__link__details {
+    display: block;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  .disclamer__link__details::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    margin: 0px 18px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url("vrline.svg");
+    z-index: -1;
+    right: -62px;
+  }
+
+  .disclamer__link__details:last-child::after {
+    content: none;
+  }
+
+  .disclamer__link__details li {
+    font-size: 10px;
+    margin-right: 42px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+  }
+
+  .disclamer__link__details li:nth-child(odd)::after {
+    content: none;
+  }
+
+  .disclamer__link__details li:nth-child(2)::after {
+    content: "";
+    height: 100%;
+    top: -10px;
+    background-position: center;
+  }
+
+  .disclamer__link__details li::after {
+    content: none;
+  }
+
+  .disclaimer-link-style.container {
+    padding-left: 16px;
+    padding-top: 37px;
+    margin-bottom: 92px;
+    padding-bottom: 0px;
+    height: auto;
+    display: block;
+  }
+}
