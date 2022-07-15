@@ -1,9 +1,0 @@
-.accordion-style .accordian .normal-accordion-div:last-child {
-  margin-bottom: 50px;
-}
-
-@media (max-width: 767px) {
-  .accordion-style .accordian .normal-accordion-div:last-child {
-    margin-bottom: 0px;
-  }
-}

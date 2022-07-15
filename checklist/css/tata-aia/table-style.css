@@ -1,9 +1,0 @@
-.table-style {
-  padding-top: 39px;
-}
-
-@media (max-width: 767px) {
-  .table-style {
-    padding-top: 0px;
-  }
-}
