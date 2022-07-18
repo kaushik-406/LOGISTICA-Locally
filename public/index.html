@@ -47,34 +47,8 @@
     })(window,document,'script','dataLayer','GTM-5B2RPRN');</script>
     <!-- End Google Tag Manager -->
 
-    <script>
-        partytown = {
-          forward: ['dataLayer.push'],
-        };
-
-        {
-  forward: ["dataLayer.push", "fbq"]
-};
-
-  resolveUrl={function(url) {
-    if (url.hostname === "connect.facebook.net") {
-      var proxyUrl = new URL('https://my-reverse-proxy.com/');
-      proxyUrl.searchParams.append('url', url.href);
-      return proxyUrl;
-    }
-    return url;
-  },
-  forward: [
-    "fbq"
-  ]
-}
-      </script>
-
-
-
 <!-- Meta Pixel Code -->
     <script>
-        window.fbq = function(){
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -100,7 +74,6 @@
       );
       fbq("init", "5462565163766632");
       fbq("track", "PageView");
-    };
     </script>
     <noscript
       ><img
