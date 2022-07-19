@@ -1,5 +1,3 @@
-const { json } = require("express");
-
 var digitalData = {};
 digitalData = {
   ctaTitle:"",
