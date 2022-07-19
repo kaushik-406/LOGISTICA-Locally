@@ -1,5 +1,5 @@
 var digitalData = {};
-digitalData = {
+callSatellite = {
   event:{
     eventContext:{
       ctaText:"",
