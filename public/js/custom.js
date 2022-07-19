@@ -15,3 +15,5 @@ function allctaInteraction(ctaTitle, ctaText) {
       callSatellite("all-cta-interaction");
   } catch (err) {}
 }
+
+console.log(digitalData);
