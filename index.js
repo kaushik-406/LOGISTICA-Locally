@@ -15,7 +15,7 @@ app.get("/*", function (req, res) {
     'Content-Type': 'text/plain',
     'Content-Length': '123',
     'ETag': '12345',
-    'Access-Control-Allow-Origin' : 'http://localhost:3000/'
+    'Access-Control-Allow-Origin' : 'https://logistica-locally.herokuapp.com/'
   })
 });
 app.listen(port, function (err) {
