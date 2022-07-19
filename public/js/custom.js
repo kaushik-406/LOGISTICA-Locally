@@ -12,8 +12,7 @@ function allctaInteraction(ctaTitle, ctaText) {
     //   (digitalData.event.eventName = "all-cta-interaction"),
     (digitalData.ctaText = ctaText),
     (digitalData.ctaTitle = ctaTitle),
-      callSatellite("all-cta-interaction");
+    callSatellite("all-cta-interaction");
+    console.log(JSON.stringify(digitalData));
   } catch (err) {}
 }
-
-console.log(JSON.stringify(digitalData));
