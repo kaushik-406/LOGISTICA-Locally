@@ -1,3 +1,5 @@
+const { json } = require("express");
+
 var digitalData = {};
 digitalData = {
   ctaTitle:"",
@@ -16,4 +18,4 @@ function allctaInteraction(ctaTitle, ctaText) {
   } catch (err) {}
 }
 
-console.log(digitalData);
+console.log(JSON.stringify(digitalData));
