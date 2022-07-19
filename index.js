@@ -8,8 +8,15 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", function (req, res) {
   res.send("pong");
 });
+
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.set({
+    'Content-Type': 'text/plain',
+    'Content-Length': '123',
+    'ETag': '12345',
+    'Access-Control-Allow-Origin' : 'http://localhost:3000/'
+  })
 });
 app.listen(port, function (err) {
   if (err) {
