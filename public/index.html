@@ -16,8 +16,10 @@
      <link rel="preload" href="fonts/Inter/Inter.css" as="style" onload="this.rel='stylesheet'">
      <link rel="preload" href="fonts/Roboto/Roboto.css" as="style" onload="this.rel='stylesheet'">
 
+     <!-- banner img preload -->
+    <link rel="preload" href="img/carousel-1-1519x854.jpg" as="image">
+
     <!-- Icon Font Stylesheet -->
-    
     <link rel="stylesheet" href="css/font-awesome-5.10.0-all.min.css">
     <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" as="style" onload="this.rel='stylesheet'"> -->
 
@@ -99,7 +101,11 @@
     <div class="container-fluid p-0 pb-5">
         <div class="owl-carousel header-carousel position-relative mb-5">
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <picture>
+                    <source media="(min-width:1519px)" height="1519px" width="854px" srcset="img/carousel-1-1519x854.jpg">
+                    <source media="(min-width:360px)" height="360px" width="500px" srcset="img/carousel-1-360x500.jpg">
+                    <img src="img/carousel-1-1519x854.jpg" alt="carousel-1-1519x854" class="img-fluid" height="auto" width="auto">
+                  </picture>
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -115,7 +121,11 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid lazyload" data-src="img/carousel-2.jpg" alt="">
+                <picture>
+                    <source media="(min-width:1519px)" height="1519px" width="854px" srcset="img/carousel-2-desktop.jpg">
+                    <source media="(min-width:360px)" height="360px" width="500px" srcset="img/carousel-2-mobile.jpg">
+                    <img class="img-fluid lazyload" data-src="img/carousel-2-desktop.jpg" alt="carousel-2-desktop">
+                </picture>
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
                     <div class="container">
                         <div class="row justify-content-start">
