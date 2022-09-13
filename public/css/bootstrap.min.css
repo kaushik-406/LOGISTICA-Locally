@@ -11208,3 +11208,7 @@ fieldset:disabled .btn {
         display: none !important
     }
 }
+
+.story {
+    display: none;
+  }
