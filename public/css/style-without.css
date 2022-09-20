@@ -285,7 +285,8 @@
 
 .story {
   content-visibility: auto;
-  contain-intrinsic-size: 0 500px;
+  contain-intrinsic-size: 0 1519px;
+  height: 1519px;
   }
 
 @media (min-width:992px) {
