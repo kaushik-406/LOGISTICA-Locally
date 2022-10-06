@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,67 +12,48 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+     <link rel="preload" href="fonts/Inter/Inter.css" as="style" onload="this.rel='stylesheet'">
+     <link rel="preload" href="fonts/Roboto/Roboto.css" as="style" onload="this.rel='stylesheet'">
+
+     <!-- banner img preload -->
+    <!-- <link rel="preload" href="img/carousel-1-1519x854.jpg" as="image"> -->
 
     <!-- Icon Font Stylesheet -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/font-awesome-5.10.0-all.min.css">
+    <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" as="style" onload="this.rel='stylesheet'"> -->
 
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" as="style" onload="this.rel='stylesheet'">
-
+    <link rel="stylesheet" href="css/bootstrap-icons@1.4.1-bootstrap-icons.css">
+    <!-- <link rel="preload" href="css/bootstrap-icons@1.4.1-bootstrap-icons.css" as="style" onload="this.rel='stylesheet'"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"> -->
 
     <!-- Libraries Stylesheet -->
-    <!-- <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
-
-    <link rel="preload" href="lib/animate/animate.min.css" as="style" onload="this.rel='stylesheet'">
-
-    <link rel="preload" href="lib/owlcarousel/assets/owl.carousel.min.css" as="style" onload="this.rel='stylesheet'">
-
+    <link rel="stylesheet" href="lib/animate/animate.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+    <!-- <link rel="preload" href="lib/animate/animate.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="lib/owlcarousel/assets/owl.carousel.min.css" as="style" onload="this.rel='stylesheet'"> -->
 
     <!-- Customized Bootstrap Stylesheet -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-
-    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'"> -->
 
     <!-- Template Stylesheet -->
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
-
-    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
-
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'"> -->
+    
     <!-- Google Tag Manager -->
-    <!-- <script>
-        partytown = {
-          forward: ['dataLayer.push'],
-        };
-      </script> -->
-<script type="text/partytown">
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!-- <script type="text/partytown" >(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KSSC72R');
-</script>
+    })(window,document,'script','dataLayer','GTM-5B2RPRN');</script> -->
     <!-- End Google Tag Manager -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232132850-1"></script> -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-BNX3MJY27P"></script>
-
 </head>
 
 <body>
-
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSSC72R"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B2RPRN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Spinner Start -->
@@ -119,7 +101,11 @@
     <div class="container-fluid p-0 pb-5">
         <div class="owl-carousel header-carousel position-relative mb-5">
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <picture>
+                    <source media="(min-width:1519px)" height="1519px" width="854px" srcset="img/carousel-1-1519x854.jpg">
+                    <source media="(min-width:360px)" height="360px" width="500px" srcset="img/carousel-1-360x500.jpg">
+                    <img src="img/carousel-1-1519x854.jpg" alt="carousel-1-1519x854" class="img-fluid" height="auto" width="auto">
+                  </picture>
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -135,7 +121,11 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid lazyload" data-src="img/carousel-2.jpg" alt="">
+                <picture>
+                    <source media="(min-width:1519px)" height="1519px" width="854px" srcset="img/carousel-2-desktop.jpg">
+                    <source media="(min-width:360px)" height="360px" width="500px" srcset="img/carousel-2-mobile.jpg">
+                    <img class="img-fluid lazyload" data-src="img/carousel-2-desktop.jpg" alt="carousel-2-desktop">
+                </picture>
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -154,6 +144,80 @@
     </div>
     <!-- Carousel End -->
 
+<!-- Service Start -->
+<div class="story">
+    <div class="container-xxl py-5">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Our Services</h6>
+            <h1 class="mb-5">Explore Our Services</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-1.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Air Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-2.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Ocean Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-3.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Road Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-4.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Train Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-5.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Customs Clearance</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-6.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Warehouse Solutions</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Service End -->
 
     <!-- About Start -->
     <div class="container-fluid overflow-hidden py-5 px-lg-0">
@@ -234,7 +298,12 @@
 
 
     <!-- Service Start -->
+<<<<<<< HEAD
     <!-- <div class="container-xxl py-5">
+=======
+    <div class="story">
+        <div class="container-xxl py-5">
+>>>>>>> 4b363bbc40cfc2a960ff058847df819d5b678757
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-secondary text-uppercase">Our Services</h6>
@@ -244,7 +313,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid lazyload" data-src="img/service-1.jpg" alt="">
+                            <img class="lazyload img-fluid" data-src="img/service-1.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Air Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -254,7 +323,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid lazyload" data-src="img/service-2.jpg" alt="">
+                            <img class="lazyload img-fluid" data-src="img/service-2.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Ocean Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -264,7 +333,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid lazyload" data-src="img/service-3.jpg" alt="">
+                            <img class="lazyload img-fluid" data-src="img/service-3.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Road Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -274,7 +343,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid lazyload" data-src="img/service-4.jpg" alt="">
+                            <img class="lazyload img-fluid" data-src="img/service-4.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Train Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -284,7 +353,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid lazyload" data-src="img/service-5.jpg" alt="">
+                            <img class="lazyload img-fluid" data-src="img/service-5.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Customs Clearance</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -294,7 +363,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid lazyload" data-src="img/service-6.jpg" alt="">
+                            <img class="lazyload img-fluid" data-src="img/service-6.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Warehouse Solutions</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -303,7 +372,12 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div> -->
+=======
+    </div>
+</div>
+>>>>>>> 4b363bbc40cfc2a960ff058847df819d5b678757
     <!-- Service End -->
 
 
@@ -346,6 +420,80 @@
     </div>
     <!-- Feature End -->
 
+    <!-- Service Start -->
+    <div class="story">
+        <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Our Services</h6>
+                <h1 class="mb-5">Explore Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-1.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Air Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-2.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Ocean Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-3.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Road Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-4.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Train Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-5.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Customs Clearance</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-6.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Warehouse Solutions</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Service End -->
 
     <!-- Pricing Start -->
     <div class="container-xxl py-5">
@@ -417,6 +565,80 @@
     </div>
     <!-- Pricing End -->
 
+    <!-- Service Start -->
+    <div class="story">
+        <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Our Services</h6>
+                <h1 class="mb-5">Explore Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-1.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Air Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-2.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Ocean Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-3.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Road Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-4.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Train Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-5.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Customs Clearance</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-6.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Warehouse Solutions</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Service End -->
 
     <!-- Quote Start -->
     <div class="container-xxl py-5">
@@ -459,7 +681,7 @@
                                     <textarea class="form-control border-0" placeholder="Special Note"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                    <button class="btn btn-primary w-100 py-3" onclick="allctaInteraction('Submit','Form Submit')" type="button">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -470,9 +692,83 @@
     </div>
     <!-- Quote End -->
 
+    <!-- Service Start -->
+    <div class="story">
+        <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Our Services</h6>
+                <h1 class="mb-5">Explore Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-1.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Air Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-2.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Ocean Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-3.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Road Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-4.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Train Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-5.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Customs Clearance</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-6.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Warehouse Solutions</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Service End -->
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 story">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-secondary text-uppercase">Our Team</h6>
@@ -552,7 +848,80 @@
     </div>
     <!-- Team End -->
 
-
+<!-- Service Start -->
+<div class="story">
+    <div class="container-xxl py-5">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Our Services</h6>
+            <h1 class="mb-5">Explore Our Services</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-1.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Air Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-2.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Ocean Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-3.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Road Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-4.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Train Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-5.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Customs Clearance</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="lazyload img-fluid" data-src="img/service-6.jpg" alt="">
+                    </div>
+                    <h4 class="mb-3">Warehouse Solutions</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Service End -->
     <!-- Testimonial Start -->
     <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -609,6 +978,81 @@
         </div>
     </div> -->
     <!-- Testimonial End -->
+
+     <!-- Service Start -->
+    <div class="story">
+        <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Our Services</h6>
+                <h1 class="mb-5">Explore Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-1.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Air Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-2.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Ocean Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-3.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Road Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-4.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Train Freight</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-5.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Customs Clearance</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="lazyload img-fluid" data-src="img/service-6.jpg" alt="">
+                        </div>
+                        <h4 class="mb-3">Warehouse Solutions</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Service End -->
 
 
     <!-- Footer Start -->
@@ -676,19 +1120,22 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script type="text/partytown" src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="~partytown/partytown.js"></script>
-    <script type="text/partytown" src="js/lazysizes.min.js"></script>
- 
+    <script defer src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script defer src="js/bootstrap.bundle.min.js"></script> -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="lib/wow/wow.min.js"></script>
+    <script defer src="lib/easing/easing.min.js"></script>
+    <script defer src="lib/waypoints/waypoints.min.js"></script>
+    <script defer src="lib/counterup/counterup.min.js"></script>
+    <script defer src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <!-- <script defer src="./js/font-awesome-all.min.js"></script> -->
+    <script defer src="js/lazysizes.min.js"></script>
+    <!-- <script src="./~partytown/partytown.js"></script> -->
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
+    
 </body>
 
 </html>
