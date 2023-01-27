@@ -213,7 +213,7 @@ header .social-icon li a
 }
 #home
 	{
-		/* background: url('../images/home-bg.jpg') no-repeat; */
+		background: url('../images/home-bg.jpg') no-repeat;
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-top: 160px;
