@@ -36,7 +36,9 @@ const observer = new PerformanceObserver((list) => {
 
 observer.observe({ type: "first-input", buffered: true });
 
-// Log events with maximum event duration for a user interaction
-Object.entries(eventLatencies).forEach(([k, v]) => {
-  console.log(Math.max(...v));
-});
+setTimeout(() => {
+  Object.entries(eventLatencies).forEach(([k, v]) => {
+    console.log(Math.max.apply(null, v));
+  });
+}, 5000); // Wait for 5 seconds to allow time for events to be recorded
+
