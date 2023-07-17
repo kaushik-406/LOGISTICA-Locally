@@ -20,25 +20,24 @@
 // });
 
 
-let eventLatencies = {};
-
 const observer = new PerformanceObserver((list) => {
   list.getEntries().forEach((entry) => {
-    if (entry.interactionId > 0) {
-      const interactionId = entry.interactionId;
-      if (!eventLatencies.hasOwnProperty(interactionId)) {
-        eventLatencies[interactionId] = [];
-      }
-      eventLatencies[interactionId].push(entry.duration);
-    }
+    // Full duration
+    const duration = entry.duration;
+
+    // Input delay (before processing event)
+    const delay = entry.processingStart - entry.startTime;
+
+    // Synchronous event processing time
+    // (between start and end dispatch)
+    const eventHandlerTime = entry.processingEnd - entry.processingStart;
+    console.log(`Total duration: ${duration}`);
+    console.log(`Event delay: ${delay}`);
+    console.log(`Event handler duration: ${eventHandlerTime}`);
   });
 });
 
-observer.observe({ type: "first-input", buffered: true });
+// Register the observer for events
+observer.observe({ type: "event", buffered: true });
 
-setTimeout(() => {
-  Object.entries(eventLatencies).forEach(([k, v]) => {
-    console.log(Math.max.apply(null, v));
-  });
-}, 5000); // Wait for 5 seconds to allow time for events to be recorded
 
