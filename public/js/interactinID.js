@@ -23,7 +23,6 @@
 
 const observer = new PerformanceObserver((list) => {
   list.getEntries().forEach((entry) => {
-    debugger;
     // Full duration
     const duration = entry.duration;
 
