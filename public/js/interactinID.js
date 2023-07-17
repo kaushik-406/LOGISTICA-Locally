@@ -9,19 +9,21 @@
 //         eventLatencies[interactionId] = [];
 //       }
 //        eventLatencies[interactionId].push(entry.duration);
-//   });
+// }});
 // });
 
 // observer.observe({type: "event", buffered: true});
 
 // // Log events with maximum event duration for a user interaction
-// Object.entries(eventLatencies).forEach(([k, v]) => {
-//     console.log(Math.max(...v));
+// Object.entries(eventLatencies).forEach((ele) => {
+//     // console.log(Math.max(...v));
+//     console.log(ele)
 // });
 
 
 const observer = new PerformanceObserver((list) => {
   list.getEntries().forEach((entry) => {
+    debugger;
     // Full duration
     const duration = entry.duration;
 
