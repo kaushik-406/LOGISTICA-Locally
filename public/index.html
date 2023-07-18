@@ -11,14 +11,58 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link as="font" crossorigin="" href="fonts/Heebo/Heebo-400.woff2" rel="preload" type="font/woff2" />
+    <link as="font" crossorigin="" href="fonts/Heebo/Heebo-500.woff2" rel="preload" type="font/woff2" />
+    <link as="font" crossorigin="" href="fonts/Jost/Jost-500.woff2" rel="preload" type="font/woff2" />
+    <link as="font" crossorigin="" href="fonts/Jost/Jost-600.woff2" rel="preload" type="font/woff2" />
+    <link as="font" crossorigin="" href="fonts/Jost/Jost-700.woff2" rel="preload" type="font/woff2" />
+
+    <style>
+        @font-face {
+            font-display: swap;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            src: url('./fonts/Heebo/Heebo-400.woff2') format('woff2');
+        }
+    
+        /* heebo-500 - latin */
+        @font-face {
+            font-display: swap;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 500;
+            src: url('./fonts/Heebo/Heebo-500.woff2') format('woff2');
+        }
+    
+        @font-face {
+            font-display: swap;
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            src: url('./fonts/Jost/Jost-500.woff2') format('woff2');
+        }
+    
+        @font-face {
+            font-display: swap;
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 600;
+            src: url('./fonts/Jost/Jost-600.woff2') format('woff2');
+        }
+    
+        @font-face {
+            font-display: swap;
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 700;
+            src: url('./fonts/Jost/Jost-700.woff2') format('woff2');
+        }
+    </style>
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/Jquery/css/all.min.css" rel="stylesheet">
+    <link href="lib/Jquery/css/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -671,8 +715,8 @@
     </div>
 
     <!-- JavaScript Libraries -->
-    <script src="lib/Jquery/jquery-3.4.1.min.js"></script>
-    <script defer src="lib/Jquery/bootstrap.bundle.min.js"></script>
+    <script src="lib/Jquery/js/jquery-3.4.1.min.js"></script>
+    <script defer src="lib/Jquery/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script defer src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
