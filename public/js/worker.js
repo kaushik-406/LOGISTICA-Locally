@@ -1,11 +1,9 @@
-self.addEventListener('message', function(e){
-    let data = e.data
-    let processedData = processImageData(data)
-    self.postMessage(processedData) 
-})
-
-function processImage(data) {
-    // Image Processing is done
-
-    return 'Image Processed';
-}
+// worker.js (your worker script)
+self.addEventListener('message', (event) => {
+    const data = event.data;
+    // Perform some background task with the data
+    const result = data * 2;
+    // Send the result back to the main thread
+    self.postMessage(result);
+  });
+  
