@@ -205,6 +205,11 @@ h6,
         color: var(--dark);
         background: var(--secondary);
     }
+
+    .visible{
+        content-visibility: auto;
+        contain-intrinsic-size: 992px;
+    }
 }
 
 
@@ -636,4 +641,31 @@ h6,
 .footer .copyright a:hover,
 .footer .footer-menu a:hover {
     color: var(--secondary);
+}
+
+.visible{
+    content-visibility: auto;
+    contain-intrinsic-size: 1320px;
+}
+
+
+@media (max-width: 996px) {
+    .visible{
+        content-visibility: auto;
+        contain-intrinsic-size: 996px;
+    }
+}
+
+@media (max-width: 720px) {
+    .visible{
+        content-visibility: auto;
+        contain-intrinsic-size: 720px;
+    }
+}
+
+@media (max-width: 320px) {
+    .visible{
+        content-visibility: auto;
+        contain-intrinsic-size: 320px;
+    }
 }
