@@ -21,37 +21,22 @@
 // });
 
 
-// const observer = new PerformanceObserver((list) => {
-//   list.getEntries().forEach((entry) => {
-//     // Full duration
-//     const duration = entry.duration;
+const observer = new PerformanceObserver((list) => {
+  list.getEntries().forEach((entry) => {
+    // Full duration
+    const duration = entry.duration;
 
-//     // Input delay (before processing event)
-//     const delay = entry.processingStart - entry.startTime;
+    // Input delay (before processing event)
+    const delay = entry.processingStart - entry.startTime;
 
-//     // Synchronous event processing time
-//     // (between start and end dispatch)
-//     const eventHandlerTime = entry.processingEnd - entry.processingStart;
-//     console.log(`Total duration: ${duration}`);
-//     console.log(`Event delay: ${delay}`);
-//     console.log(`Event handler duration: ${eventHandlerTime}`);
-//   });
-// });
+    // Synchronous event processing time
+    // (between start and end dispatch)
+    const eventHandlerTime = entry.processingEnd - entry.processingStart;
+    console.log(`Total duration: ${duration}`);
+    console.log(`Event delay: ${delay}`);
+    console.log(`Event handler duration: ${eventHandlerTime}`);
+  });
+});
 
-// // Register the observer for events
-// observer.observe({ type: "event", buffered: true });
-
-
-webVitals.getINP(function(info) {
-  console.log(info)
-}, { reportAllChanges: true });
-
-
-function logDelta({ name, id, delta }) {
-  console.log(`${name} matching ID ${id} changed by ${delta}`);
-}
-
-onCLS(logDelta);
-onINP(logDelta);
-onLCP(logDelta);
-
+// Register the observer for events
+observer.observe({ type: "event", buffered: true });
